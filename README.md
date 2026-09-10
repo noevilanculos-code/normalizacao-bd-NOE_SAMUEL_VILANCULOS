@@ -36,9 +36,7 @@ Este repositório contém a análise e a normalização progressiva (0FN → 1FN
    - Secção 9 — Modelo Entidade-Relacionamento (MER);
    - Secção 10 — scripts SQL (extratos comentados).
 
-2. **Diagrama MER (diagramas/)** — o ficheiro `mer_funcionarios.png` é a versão pronta a usar; `mer_funcionarios.svg` é a versão vetorial (zoom sem perda de qualidade); `mer_funcionarios.dot` é o código-fonte (Graphviz — ferramenta usada para desenhar o modelo, `dot -Tpng mer_funcionarios.dot -o mer_funcionarios.png` para regenerar). Foi também disponibilizada uma versão equivalente em sintaxe Mermaid (`.mmd`), caso seja preferível editar num site como [mermaid.live](https://mermaid.live).
-
-3. **Scripts SQL (sql/)** — testados e validados de ponta-a-ponta (schema + dados + queries) antes da entrega. Para experimentar localmente (exemplo com SQLite):
+2. **Scripts SQL (sql/)** — testados e validados de ponta-a-ponta (schema + dados + queries) antes da entrega. Para experimentar localmente (exemplo com SQLite):
    ```bash
    sqlite3 funcionarios.db < sql/01_ddl_criacao_tabelas.sql
    sqlite3 funcionarios.db < sql/02_dml_insercao_dados.sql
@@ -72,3 +70,7 @@ Todos os relacionamentos do esquema são **1:N** (ver justificação na secção
 ## Autor
 
 Noé Samuel Vilanculos — Curso de Licenciatura em Informática, Universidade Licungo.
+
+## VIDEO DE EXPLICACAO (YOUTUBE)
+
+https://www.youtube.com/watch?v=Cs_cuI5X1QE
